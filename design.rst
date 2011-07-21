@@ -1,27 +1,38 @@
 
 :position:
+  :title:
+  :role:
   :type:
+  :points:
+  :key:
+  :image:
+  :warning:
+  :error:
 
 
 :transition:
+  :title:
   :type:
   :from:
   :to:
   :opportunity:
-  :keys:
+  :key:
   :counter:
+  :image:
   :video:
   :warning:
   :error:
 
 
 :submission:
+  :title:
   :type:
   :from:
   :opportunity:
-  :keys:
+  :key:
 
   :counter:
+  :image:
   :video:
   :warning:
   :error:
