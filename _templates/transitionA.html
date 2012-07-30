@@ -1,0 +1,19 @@
+
+<h1>
+Transition From {{ transition.fromPos.id }} 
+To {{ transition.toPos.id }} 
+</h1>
+
+{{ transition.text }}
+
+{% if hasattr(transition, 'opportunity') %}
+<h2>Opportunities</h2>
+{% for opp in transition.opportunity %}
+<li> {{ opp }} </li>
+{% endfor %}
+{% endif %}
+
+<HR>
+<A HREF={{- make_url('position', position=transition.toPos.id) -}}>
+NEXT</A> &gt;
+<A HREF="/random">RANDOM</A> 

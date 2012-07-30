@@ -1,0 +1,19 @@
+
+<h1>
+{{ position.title }}: Transitions and Submissions
+</h1>
+
+{% for sub in position.submission %}
+<li><A HREF={{- make_url('submissionA', submission=sub.id) -}}>
+{{ sub.title }}
+</A></li>
+{% endfor %}
+
+{% for tr in position.transition %}
+<li><A HREF={{- make_url('transitionA', transition=tr.id) -}}>
+{{ tr.title }}
+</A></li>
+{% endfor %}
+
+<HR>
+<A HREF="/random">RANDOM</A> 

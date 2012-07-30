@@ -1,0 +1,14 @@
+
+<h1>
+{{ position.title }}: What Can You Do?
+</h1>
+
+{% if hasattr(position, 'image') %}
+  <IMG SRC="{{- position.image[0].url -}}">
+{% endif %}
+
+What transitions and submissions can you try here?
+
+<HR>
+<A HREF={{- make_url('positionA', position=position.id) -}}>NEXT</A> 
+| <A HREF="/random">RANDOM</A> 

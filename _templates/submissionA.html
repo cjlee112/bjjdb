@@ -1,0 +1,16 @@
+
+<h1>
+{{ submission.title }} 
+</h1>
+
+{{ submission.text }}
+
+{% if hasattr(submission, 'opportunity') %}
+<h2>Opportunities</h2>
+{% for opp in submission.opportunity %}
+<li> {{ opp }} </li>
+{% endfor %}
+{% endif %}
+
+<HR>
+<A HREF="/random">RANDOM</A> 
