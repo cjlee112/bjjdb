@@ -36,11 +36,11 @@
   :from: mount:D
   :to: half_guard:D
   :opportunity:
-    If A doesn't have hooks in, presumably can push his knee over your
+    If A doesn't have hooks in, presumably you can push his knee over your
     leg to half guard.
 
 :transition:
-  :from: half-guard:D
+  :from: half_guard:D
   :to: closed_guard:D
 
   Hip-escape to get enough space to bring your near-side knee up
@@ -49,8 +49,9 @@
   for getting other leg around to closed-guard.
 
 :transition:
+  :title: Throw opponent who stands up from your guard
   :from: guard_vs_standing:D
-  :to: mount:A, side_control:A
+  :to: side_control:A
 
   Hold A's sleeve with both hands, left foot pushes his hip
   back while right foot hooks behind his knee to throw him down
@@ -58,7 +59,7 @@
 
 :submission: standing_guillotine
   :type: guillotine
-  :from: standing_face_off
+  :from: standing_face_off:D
 
   When he shoots for takedown, block him with both hands on his
   shoulders, then push his head to one side and wrap arm over & under
@@ -94,7 +95,7 @@
 
 :submission:
   :type: armbar
-  :from: close_guard:D
+  :from: closed_guard:D
 
   :opportunity:
     you control his wrist on your chest
