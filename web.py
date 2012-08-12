@@ -4,6 +4,7 @@ from jinja2 import Environment, FileSystemLoader
 import os
 import glob
 import sys
+import random
 
 def redirect(path='/', body=None, delay=0):
     'redirect browser, if desired after showing a message'
@@ -129,7 +130,8 @@ class Server(object):
     view.exposed = True
 
     def random(self):
-        view = random.choice(self.questions.keys())
+        pos = random.choice(self.positions.keys())
+        return self.view('position', position=pos)
     random.exposed = True
 
 def get_server(filename):

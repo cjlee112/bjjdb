@@ -19,7 +19,7 @@ class MoveBase(object):
                 self.title = self.name
         self.node = node
         self.__dict__.update(kwargs)
-        self.text = ''.join(getattr(node, 'text', ())) # convert list to string
+        self.text = '\n'.join(getattr(node, 'text', ())) # convert list to string
 
 
 
