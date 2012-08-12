@@ -12,7 +12,7 @@ def get_singleton_attr(obj, attr):
 
 
 class MoveBase(object):
-    def __init__(self, node, **kwargs):
+    def __init__(self, node, image=(), **kwargs):
         if len(node.tokens) > 1:            
             self.name = node.tokens[1]
             if 'title' not in kwargs:
@@ -20,7 +20,19 @@ class MoveBase(object):
         self.node = node
         self.__dict__.update(kwargs)
         self.text = '\n'.join(getattr(node, 'text', ())) # convert list to string
+        images = []
+        for line in image:
+            images.append(Image(line))
+        if images:
+            self.image = images
+            
 
+class Image(object):
+    def __init__(self, path):
+        if path.startswith('http://'):
+            self.url = path
+        else:
+            self.url = '/images/' + path
 
 
 def init_graph(tree):
@@ -60,6 +72,7 @@ def init_graph(tree):
                     move.title = '%s submission' % move.type[0]
             move.id = len(moves)
             moves.append(move)
+            
 
     return positions, moves
 
