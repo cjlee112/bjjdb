@@ -12,7 +12,7 @@ def get_singleton_attr(obj, attr):
 
 
 class MoveBase(object):
-    def __init__(self, node, image=(), **kwargs):
+    def __init__(self, node, image=(), video=(), **kwargs):
         if len(node.tokens) > 1:            
             self.name = node.tokens[1]
             if 'title' not in kwargs:
@@ -25,6 +25,11 @@ class MoveBase(object):
             images.append(Image(line))
         if images:
             self.image = images
+        videos = []
+        for line in video:
+            videos.append(Video(line))
+        if videos:
+            self.video = videos
             
 
 class Image(object):
@@ -33,6 +38,19 @@ class Image(object):
             self.url = path
         else:
             self.url = '/images/' + path
+
+class Video(object):
+    def __init__(self, path):
+        if path.startswith('youtube:'):
+            self.__class__ = YouTubeVideo
+            self.id = path[8:]
+
+class YouTubeVideo(Video):
+    def get_html(self):
+        return '''<iframe width="560" height="315"
+        src="http://www.youtube.com/embed/%s?rel=0"
+        frameborder="0" allowfullscreen></iframe>\n''' % self.id
+        
 
 
 def init_graph(tree):

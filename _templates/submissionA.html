@@ -12,5 +12,12 @@
 {% endfor %}
 {% endif %}
 
+{% if hasattr(submission, 'video') %}
+<h2>Videos</h2>
+{% for v in submission.video %}
+{{ v.get_html() }} <BR>
+{% endfor %}
+{% endif %}
+
 <HR>
 <A HREF="/random">RANDOM</A> 

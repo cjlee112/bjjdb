@@ -13,6 +13,13 @@ To {{ transition.toPos.id }}
 {% endfor %}
 {% endif %}
 
+{% if hasattr(transition, 'video') %}
+<h2>Videos</h2>
+{% for v in transition.video %}
+{{ v.get_html() }} <BR>
+{% endfor %}
+{% endif %}
+
 <HR>
 <A HREF={{- make_url('position', position=transition.toPos.id) -}}>
 NEXT</A> &gt;
