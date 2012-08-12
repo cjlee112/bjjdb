@@ -9,7 +9,7 @@ To {{ transition.toPos.id }}
 {% if hasattr(transition, 'opportunity') %}
 <h2>Opportunities</h2>
 {% for opp in transition.opportunity %}
-<li> {{ opp }} </li>
+<li> {{ '\n'.join(opp) }} </li>
 {% endfor %}
 {% endif %}
 

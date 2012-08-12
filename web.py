@@ -134,7 +134,7 @@ class Server(object):
 
 def get_server(filename):
     import schema
-    import parse
+    from reusabletext import parse
     print 'loading templates...'
     templateDict, env = load_templates()
     #templateVars, templateViews = load_template_vars()

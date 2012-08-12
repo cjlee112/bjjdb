@@ -1,4 +1,3 @@
-import parse
 
 defaultBlocks = (':position:', ':transition:', ':submission:',
                  ':opportunity:', ':brief:',
@@ -24,45 +23,43 @@ class MoveBase(object):
 
 
 
-def init_graph(forest):
-    d = parse.index_rust(forest)
+def init_graph(tree):
     positions = {}
     moves = []
-    for tree in forest:
-        for node in tree.walk():
-            token = node.tokens[0][1:-1]
-            if token == 'position': # create A and D roles for this position
-                metadata = node.metadata_dict()
-                name = node.tokens[1]
-                pos = MoveBase(node, role='A', **metadata)
-                pos.id = name + ':A'
-                positions[pos.id] = pos
-                pos = MoveBase(node, role='D', **metadata)
-                pos.id = name + ':D'
-                positions[pos.id] = pos
-                
-            elif token == 'transition' or token == 'submission':
-                metadata = node.metadata_dict()
-                node.child_dict(metadata)
-                move = MoveBase(node, **metadata)
-                fromPos = get_singleton_attr(move, 'from')
-                fromPos = positions[fromPos]
-                move.fromPos = fromPos
-                try:
-                    getattr(fromPos, token).append(move)
-                except AttributeError:
-                    setattr(fromPos, token, [move])
-                if token == 'transition':
-                    toPos = get_singleton_attr(move, 'to')
-                    toPos = positions[toPos]
-                    move.toPos = toPos
-                    if not hasattr(move, 'title'):
-                        move.title = 'Transition to %s' % toPos.id
-                else:
-                    if not hasattr(move, 'title'):
-                        move.title = '%s submission' % move.type[0]
-                move.id = len(moves)
-                moves.append(move)
+    for node in tree.walk():
+        token = getattr(node, 'tokens', ('skip',))[0][1:-1]
+        if token == 'position': # create A and D roles for this position
+            metadata = node.metadata_dict()
+            name = node.tokens[1]
+            pos = MoveBase(node, role='A', **metadata)
+            pos.id = name + ':A'
+            positions[pos.id] = pos
+            pos = MoveBase(node, role='D', **metadata)
+            pos.id = name + ':D'
+            positions[pos.id] = pos
+
+        elif token == 'transition' or token == 'submission':
+            metadata = node.metadata_dict()
+            node.child_dict(metadata)
+            move = MoveBase(node, **metadata)
+            fromPos = get_singleton_attr(move, 'from')
+            fromPos = positions[fromPos]
+            move.fromPos = fromPos
+            try:
+                getattr(fromPos, token).append(move)
+            except AttributeError:
+                setattr(fromPos, token, [move])
+            if token == 'transition':
+                toPos = get_singleton_attr(move, 'to')
+                toPos = positions[toPos]
+                move.toPos = toPos
+                if not hasattr(move, 'title'):
+                    move.title = 'Transition to %s' % toPos.id
+            else:
+                if not hasattr(move, 'title'):
+                    move.title = '%s submission' % move.type[0]
+            move.id = len(moves)
+            moves.append(move)
 
     return positions, moves
 

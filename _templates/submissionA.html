@@ -8,7 +8,7 @@
 {% if hasattr(submission, 'opportunity') %}
 <h2>Opportunities</h2>
 {% for opp in submission.opportunity %}
-<li> {{ opp }} </li>
+<li> {{ '\n'.join(opp) }} </li>
 {% endfor %}
 {% endif %}
 
