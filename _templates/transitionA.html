@@ -4,14 +4,15 @@ Transition From {{ transition.fromPos.id }}
 To {{ transition.toPos.id }} 
 </h1>
 
-{{ transition.text }}
-
 {% if hasattr(transition, 'opportunity') %}
 <h2>Opportunities</h2>
 {% for opp in transition.opportunity %}
 <li> {{ '\n'.join(opp) }} </li>
 {% endfor %}
 {% endif %}
+
+<h2>Steps</h2>
+{{ transition.text }}
 
 {% if hasattr(transition, 'video') %}
 <h2>Videos</h2>
