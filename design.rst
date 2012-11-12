@@ -37,6 +37,13 @@
   :warning:
   :error:
 
+Draw from other "maps" of BJJ
+-----------------------------
+
+* http://mattsdailyjournal.files.wordpress.com/2012/03/jiu-jitsu-univ-mindmap.jpg
+
+
+
 
 Simple interface proposal
 -------------------------
@@ -88,3 +95,15 @@ random vars:
 * your role: making the move vs. resisting or countering it.
 * whether to ask you the sequence of moves or the keys to success.
 * possible variations: 
+
+Easiest path for moving this forward
+....................................
+
+* focus right now on running this in its current form
+  (as a CherryPy server) and adding content (on laptop),
+  but *access* it from smartphone or ipad.
+
+* later explore generating static pages using something
+  like Pelican, which you could view directly on smartphone
+  even offline.
+
