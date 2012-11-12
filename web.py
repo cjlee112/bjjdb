@@ -130,7 +130,11 @@ class Server(object):
     view.exposed = True
 
     def random(self):
-        pos = random.choice(self.positions.keys())
+        n = 0
+        while n == 0:
+            pos = random.choice(self.positions.keys())
+            n = len(self.positions[pos].submission) \
+                + len(self.positions[pos].transition)
         return self.view('position', position=pos)
     random.exposed = True
 

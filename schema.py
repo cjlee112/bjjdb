@@ -30,7 +30,14 @@ class MoveBase(object):
             videos.append(Video(line))
         if videos:
             self.video = videos
-            
+
+class Position(MoveBase):
+    def __init__(self, *args, **kwargs):
+        MoveBase.__init__(self, *args, **kwargs)
+        self.id = '%s:%s' % (self.name, self.role)
+        self.title = self.id
+        self.submission = []
+        self.transition = []
 
 class Image(object):
     def __init__(self, path):
@@ -61,11 +68,9 @@ def init_graph(tree):
         if token == 'position': # create A and D roles for this position
             metadata = node.metadata_dict()
             name = node.tokens[1]
-            pos = MoveBase(node, role='A', **metadata)
-            pos.id = name + ':A'
+            pos = Position(node, role='A', **metadata)
             positions[pos.id] = pos
-            pos = MoveBase(node, role='D', **metadata)
-            pos.id = name + ':D'
+            pos = Position(node, role='D', **metadata)
             positions[pos.id] = pos
 
         elif token == 'transition' or token == 'submission':
@@ -75,19 +80,20 @@ def init_graph(tree):
             fromPos = get_singleton_attr(move, 'from')
             fromPos = positions[fromPos]
             move.fromPos = fromPos
-            try:
-                getattr(fromPos, token).append(move)
-            except AttributeError:
-                setattr(fromPos, token, [move])
+            getattr(fromPos, token).append(move)
             if token == 'transition':
                 toPos = get_singleton_attr(move, 'to')
                 toPos = positions[toPos]
                 move.toPos = toPos
                 if not hasattr(move, 'title'):
                     move.title = 'Transition to %s' % toPos.id
+                else:
+                    move.title = move.title[0]
             else:
                 if not hasattr(move, 'title'):
                     move.title = '%s submission' % move.type[0]
+                else:
+                    move.title = move.title[0]
             move.id = len(moves)
             moves.append(move)
             
