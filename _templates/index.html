@@ -1,0 +1,15 @@
+
+<h1>Positions</h1>
+
+{% for k,p in positions.items() %}
+<li><A HREF={{- make_url('position', position=p.id) -}}>
+{% if p.title %}
+{{ p.title }}
+{% else %}
+{{ p.id }}
+{% endif %}
+</A></li>
+{% endfor %}
+
+<HR>
+<A HREF="/random">RANDOM</A> 
