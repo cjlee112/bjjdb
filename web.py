@@ -121,7 +121,7 @@ class Server(object):
         try:
             fetch_data(d, self.positions, self.moves) # retrieve objects
             s = func(make_url=make_url, hasattr=hasattr, getattr=getattr,
-                     **d) # run the requested view function
+                     positions=self.positions, **d) # run the requested view function
         except Exception, e:
             cherrypy.log.error('view function error', traceback=True)
             cherrypy.response.status = 500
