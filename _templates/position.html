@@ -11,4 +11,7 @@ What transitions and submissions can you try here?
 
 <HR>
 <A HREF={{- make_url('positionA', position=position.id) -}}>NEXT</A> 
+{% if hasattr(position, 'opponent') and position.opponent.transition %}
+| <A HREF={{- make_url('opponentA', position=position.id) -}}>RISKS</A>
+{% endif %}
 | <A HREF="/random">RANDOM</A> 

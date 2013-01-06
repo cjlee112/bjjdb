@@ -1,0 +1,26 @@
+
+<h1>
+{{ position.title }}: What Your Opponent Could Do
+</h1>
+
+{% for sub in position.opponent.submission %}
+<li><A HREF={{- make_url('submissionA', submission=sub.id) -}}>
+{{ sub.title }}
+</A></li>
+{% endfor %}
+
+{% for tr in position.opponent.transition %}
+<li><A HREF={{- make_url('transitionA', transition=tr.id) -}}>
+{{ tr.title }}
+</A>
+{% if hasattr(tr, 'opportunity') %}
+:
+{% for opp in tr.opportunity %}
+( {{- '\n'.join(opp) -}} )
+{% endfor %}
+{% endif %}
+</li>
+{% endfor %}
+
+<HR>
+<A HREF="/random">RANDOM</A> 

@@ -61,6 +61,11 @@ class YouTubeVideo(Video):
         frameborder="0" allowfullscreen></iframe>\n''' % self.id
         
 
+def switch_role(positionID):
+    'swap D and A roles'
+    d = dict(A='D', D='A')
+    l = positionID.split(':')
+    return  l[0] + ':' + d[l[1]]
 
 def init_graph(tree):
     positions = {}
@@ -98,7 +103,13 @@ def init_graph(tree):
                     move.title = move.title[0]
             move.id = len(moves)
             moves.append(move)
-            
+
+    for k,v in positions.items(): # link each position to its opponent position
+        opponent = switch_role(k)
+        try:
+            v.opponent = positions[opponent]
+        except KeyError:
+            pass
 
     return positions, moves
 
