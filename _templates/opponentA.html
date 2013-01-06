@@ -9,16 +9,25 @@
 </A></li>
 {% endfor %}
 
-{% for tr in position.opponent.transition %}
+{% for sub in getattr(position.opponent, 'submission', ()) %}
+<li><A HREF={{- make_url('submissionA', submission=sub.id) -}}>
+{{ sub.title }}
+</A>
+:
+{% for opp in getattr(sub, 'opportunity', ()) %}
+( {{- '\n'.join(opp) -}} )
+{% endfor %}
+</li>
+{% endfor %}
+
+{% for tr in getattr(position.opponent, 'transition', ()) %}
 <li><A HREF={{- make_url('transitionA', transition=tr.id) -}}>
 {{ tr.title }}
 </A>
-{% if hasattr(tr, 'opportunity') %}
 :
-{% for opp in tr.opportunity %}
+{% for opp in getattr(tr, 'opportunity', ()) %}
 ( {{- '\n'.join(opp) -}} )
 {% endfor %}
-{% endif %}
 </li>
 {% endfor %}
 
