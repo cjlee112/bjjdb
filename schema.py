@@ -1,3 +1,4 @@
+from reusabletext import graphviz
 
 defaultBlocks = (':position:', ':transition:', ':submission:',
                  ':opportunity:', ':brief:',
@@ -19,7 +20,8 @@ class MoveBase(object):
                 self.title = self.name
         self.node = node
         self.__dict__.update(kwargs)
-        self.text = '\n'.join(getattr(node, 'text', ())) # convert list to string
+        s = '\n'.join(getattr(node, 'text', ())) # convert list to string
+        self.text = graphviz.trivial_html(s)
         images = []
         for line in image:
             images.append(Image(line))
