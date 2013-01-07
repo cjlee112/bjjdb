@@ -1,7 +1,10 @@
 
 :position: closed_guard
-  :brief: D lying on back, wraps legs around A's back, locks ankles.
+  :brief: A lying on back, wraps legs around D's back, locks ankles.
   :image: closed-guard.jpg
+  :video: youtube:syiDiOyAL9I
+  :video: youtube:mJ3Sv7Wz_8U
+  :video: youtube:gyT2V0cU7vA
 
 :position: half_guard
 
@@ -35,9 +38,27 @@ Guard
 -----
 
 :transition:
-  :title: Breaking out of closed guard
+  :title: breaking posture vs. arm tight to your chest
   :from: closed_guard:A
+  :to: back:A
+  :video: youtube:qsZnfdvpTfA
+  :opportunity:
+    opponent holding arm tight to your chest.
+
+:transition:
+  :title: breaking posture vs. arms tight to inside of your legs
+  :from: closed_guard:A
+  :to: back:A
+  :video: youtube:wcCmf9OKln4
+  :opportunity:
+    opponent's arms tight to inside of your legs
+
+:transition:
+  :title: Breaking out of closed guard
+  :from: closed_guard:D
   :to: guard_vs_standing:A
+  :video: youtube:m-Y34SUaXEw
+  :video: youtube:kX5PHXZBth4
   :opportunity:
     You are postured up and can control his wrist on
     one side, so he can't just grab your heel to sweep you when
@@ -64,24 +85,54 @@ Guard
   * as soon as his guard opens, step out of his reach
     and control his legs, or get both arms under his legs and
     roll him up.
+  * you can get your knee on his tailbone to give yourself additional
+    leverage for breaking guard.
 
 :transition:
+  :title: cool guard pass
   :from: closed_guard:D
+  :to: side_control:A
+  :video: youtube:KF4589P0bFU
+  :opportunity:
+    your arms are free to grab his back, especially if you're postured
+    down.
+
+:transition:
+  :from: closed_guard:A
   :to: mount:A
 
   :opportunity:
     you control his wrist on your chest, preventing him from posting.
 
   Get hand on his knee prepared to lift.
-  Jerk him forward and off balance, lift his armpit with your fit
+  Jerk him forward and off balance, lift his armpit with your foot
   and kick up and across as if to your opp. shoulder.  
   Use your foot to block his leg on same side so he can't post.
   As his weight comes off that side, lift his knee with your hand
   and throw him over.
 
 :transition:
+  :title: Basic scissor sweep to mount
+  :from: closed_guard:A
+  :to: mount:A
+  :video: youtube:2zbP-OT2_98
+  :video: youtube:M-7QssemmZY
+  :opportunity:
+    you're able to shrimp away from opponent and get knee across his chest.
+
+:transition:
   :title: Scissor sweep to mount
-  :from: closed_guard:D
+  :from: closed_guard:A
+  :to: mount:A
+  :video: youtube:ANiQfO_1QUQ
+  :opportunity:
+    opponent sits back, away from you
+
+
+
+:transition:
+  :title: Scissor sweep to mount
+  :from: closed_guard:A
   :to: mount:A
   :opportunity:
     If A rises on one leg (i.e. shifts from knee to foot
@@ -91,8 +142,8 @@ Guard
   * open guard and use thrust of right thigh against his body
     to hip-escape onto your left side.  It helps if you rest your
     right foot on his posted leg.
-  * holding your right knee against his body, get your right
-    foot under his knee as a hook.
+  * holding your right knee against his body, hook your right
+    foot under his knee.
   * one combined scissor motion: 
 
     * thrust your right arm under his armpit,
@@ -135,7 +186,7 @@ Guard
 
 :submission:
   :type: armbar
-  :from: closed_guard:D
+  :from: closed_guard:A
   :video: youtube:TP4FCO-TiPo
 
   :opportunity:
@@ -148,7 +199,7 @@ Guard
 
 :submission: 
   :type: triangle
-  :from: closed_guard:D
+  :from: closed_guard:A
   :video: youtube:9brqQVrgqcc
 
   :opportunity:
@@ -160,8 +211,9 @@ Guard
 
 :submission:
   :type: kimura
-  :from: closed_guard:D
+  :from: closed_guard:A
   :video: youtube:xfwWcVubilE
+  :video: youtube:M-hyxTuh2YE
 
   :opportunity:
     if A is postured down and posts an arm,
@@ -191,7 +243,7 @@ Guard
   
 :submission:
   :type: kimura
-  :from: closed_guard:D
+  :from: closed_guard:A
   :opportunity:
     You can get A postured down with his head towards your belly.
   * push his head to one side (say your right) with your hand
@@ -211,6 +263,14 @@ Guard
     him from rolling forward out of the Kimura.
   * turn your entire upper body as a unit to gradually
     turn his arm behind his back.
+
+:submission:
+  :title: basic collar choke
+  :type: choke
+  :from: closed_guard:A
+  :video: youtube:AzbQRqGWay8
+  :opportunity:
+    you can reach deep (preferably to the back of) his collar.
 
 :transition:
   :from: guard_vs_standing:A
@@ -303,7 +363,7 @@ Side Control
 
 :transition:
   :from: side_control:D
-  :to: closed_guard:D
+  :to: closed_guard:A
   :opportunity:
     A is moving in for side-control but hasn't yet secured it.
   * turn onto your side (say, your right side) facing him.
@@ -321,7 +381,7 @@ Side Control
 
 :transition:
   :from: side_control:D
-  :to: closed_guard:D
+  :to: closed_guard:A
   :opportunity:
     when enough space opens up for you to bridge off shoulder
     on the side facing towards him (your right, say).
@@ -378,12 +438,35 @@ Side Control
     switching your base to lower leg straight out parallel to his
     body and upper leg perpendicular, knee flexed.
 
+:submission:
+  :type: americana
+  :from: side_control:A
+  :video: youtube:jTyCJbYNDGg
+  :opportunity:
+    You're able to separate his arm from his body.
+
+:submission:
+  :title: far side arm bar from side control
+  :type: armbar
+  :from: side_control:A
+  :video: youtube:T2MBMXSlA9c
+  :opportunity:
+    you have the underhook and he grips your arm or head.
+
+:submission:
+  :title: triangle choke from side control
+  :type: triangle
+  :from: side_control:A
+  :video: youtube:iGxnXCi1Z0o
+  :opportunity:
+    you can explosively step your leg over his head, then under.
+
 Mount
 -----
 
 :transition:
   :from: mount:D
-  :to: closed_guard:D
+  :to: closed_guard:A
   :opportunity:
     If A doesn't have hooks in, you can hip escape to get
     a leg out, and knee up to block.
@@ -442,6 +525,9 @@ Mount
 :submission:
   :type: americana
   :from: mount:A
+  :video: youtube:K6r8MkqeSMM
+  :opportunity:
+    opponent is flat on his back, not turned on his side.
 
 :submission:
   :type: armbar
@@ -490,7 +576,7 @@ Half Guard
 
 :transition:
   :from: half_guard:D
-  :to: closed_guard:D
+  :to: closed_guard:A
 
   Hip-escape to get enough space to bring your near-side knee up
   to block his body from re-establishing mount or side-control.
