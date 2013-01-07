@@ -6,14 +6,31 @@
 {% for sub in position.submission %}
 <li><A HREF={{- make_url('submissionA', submission=sub.id) -}}>
 {{ sub.title }}
-</A></li>
+</A>
+:
+{% for opp in getattr(sub, 'opportunity', ()) %}
+( {{- '\n'.join(opp) -}} )
+{% endfor %}
+</li>
 {% endfor %}
 
 {% for tr in position.transition %}
 <li><A HREF={{- make_url('transitionA', transition=tr.id) -}}>
 {{ tr.title }}
-</A></li>
+</A>
+:
+{% for opp in getattr(tr, 'opportunity', ()) %}
+( {{- '\n'.join(opp) -}} )
 {% endfor %}
+</li>
+{% endfor %}
+
+{% if hasattr(position, 'video') %}
+<h2>Videos</h2>
+{% for v in position.video %}
+{{ v.get_html() }} <BR>
+{% endfor %}
+{% endif %}
 
 <HR>
 <A HREF="/random">RANDOM</A> 
