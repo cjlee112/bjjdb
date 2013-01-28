@@ -5,14 +5,39 @@
   :video: youtube:syiDiOyAL9I
   :video: youtube:mJ3Sv7Wz_8U
   :video: youtube:gyT2V0cU7vA
+  :video: youtube:nUqmiCs1J-o
+
+:position: punch_block_guard
+  :video: youtube:c_qY7XPJafs
+  :video: youtube:dxhpGys_XRY
+  :video: youtube:hCOkh6OPzqM
+  :video: youtube:4IbDqn4cD6E
+  :video: youtube:RSUf4PF9bac
+
+:position: open_guard
 
 :position: half_guard
+  :video: youtube:My1AEd3INCI
+  :video: youtube:rgsr93QzK-Y
 
 :position: mount
+  :video: youtube:WL4eUfLyHcQ
+  :video: youtube:yROT0fNcq6U
+  :video: youtube:pttsG0xsKAk
+  :video: youtube:b4YnIO3zj0M
+  :video: youtube:hHGO3XQfYEQ
+  :video: youtube:9BDCNSAnw7I
+  :video: youtube:eJyTozNSZOk
 
 :position: modified_mount
+  :video: youtube:zscsBlev_4E
 
 :position: side_control
+  :video: youtube:mJ_thdMFy6w
+  :video: youtube:ZPNkwbAXKec
+  :video: youtube:DGePaVypBIM
+  :video: youtube:A5_haPTmzBs
+  :video: youtube:pqJGB5wJBwg
 
 :position: face_off
 
@@ -26,11 +51,19 @@
 
 :position: guard_vs_standing
 
+:position: spider_guard
+
 :position: closed_guard_vs_standing
 
 :position: lying_vs_standing
 
 :position: standing_face_off
+  :video: youtube:e3d8FyQMjBY
+
+:position: clinch
+  :video: youtube:nKMXOF8RuH8
+
+:position: back_clinch
 
 :position: back
 
@@ -117,8 +150,10 @@ Guard
   :to: mount:A
   :video: youtube:2zbP-OT2_98
   :video: youtube:M-7QssemmZY
+  :video: youtube:mik-odEiPEo
   :opportunity:
-    you're able to shrimp away from opponent and get knee across his chest.
+    you're able to shrimp away from opponent and get knee across his chest,
+    and also if possible to get grip deep in his color.
 
 :transition:
   :title: Scissor sweep to mount
@@ -152,11 +187,24 @@ Guard
       direction left and onto his back.
     * roll with him to mount.
 
+:transition:
+  :title: under-hook sweep
+  :from: closed_guard:A
+  :to: mount:A
+  :opportunity:
+    opponent posts a leg (e.g. trying to break guard) and you
+    control his arm on other side
+  :video: youtube:RvBaY7WYKMA
 
 :transition:
-  :from: guard_vs_standing:A
+  :title: double underhook guard pass
+  :from: open_guard:D
   :to: side_control:A
-
+  :opportunity:
+    you're able to get both arms under his legs
+  :video: youtube:Jx8uygH-hJQ
+  :video: youtube:uE71A54X5oU
+  :video: youtube:RUGorb0QwOs
   Quickly get both arms under his legs, pull him to you and up
   off the mat, then fold his legs over him
   and squish him down with all your weight while controlling
@@ -184,10 +232,23 @@ Guard
   passing his guard.  Now get your weight on his chest for side-control,
   moving your arm out from controlling his leg.
 
+:transition:
+  :title: hook sweep
+  :type: sweep
+  :from: guard_vs_standing:D
+  :to: side_control:A
+  :video: youtube:LnTUOwFDR_g
+  :opportunity:
+    you control both his sleeves and get foot on his hip
+
+
 :submission:
   :type: armbar
   :from: closed_guard:A
   :video: youtube:TP4FCO-TiPo
+  :video: youtube:ho932KzsNqY
+  :video: youtube:ZpPw76jX0so
+  :video: youtube:zBMgNoV4Uec
 
   :opportunity:
     you control his wrist on your chest
@@ -201,6 +262,11 @@ Guard
   :type: triangle
   :from: closed_guard:A
   :video: youtube:9brqQVrgqcc
+  :video: youtube:NIydXEy5Odk
+  :video: youtube:AL2Gf1BSNks
+  :video: youtube:E2xFSNshJSM
+  :video: youtube:TyUKTIRmas8
+  :video: youtube:mrMuSXudeJY
 
   :opportunity:
     one arm over legs, one arm under
@@ -265,7 +331,7 @@ Guard
     turn his arm behind his back.
 
 :submission:
-  :title: basic collar choke
+  :title: cross choke
   :type: choke
   :from: closed_guard:A
   :video: youtube:AzbQRqGWay8
@@ -306,7 +372,7 @@ Guard
   :from: guard_vs_standing:A
   :to: side_control:A
   :opportunity:
-    you can control one of D's knees and calf with both hands.
+    you can control one of his knees and calf with both hands.
   * Grab his knee on one side (say, your left) with your left
     hand on the outside of his knee.  Your right hand grips
     his calf on the inside.
@@ -314,6 +380,30 @@ Guard
     Push it down and pin it with your right knee, holding
     down both his legs.
   * Pivot left to side-control.
+
+:transition:
+  :title: hook sweep from standing guard pass
+  :from: guard_vs_standing:D
+  :to: side_control:A
+  :opportunity:
+    opponent grabs your knee for pass
+  :video: youtube:RPHUQJZVuiI
+
+:transition:
+  :title: take the back 2
+  :from: closed_guard:A
+  :to: back:A
+  :opportunity:
+    you're able to pull and lift his arms to pass under it.
+  :video: youtube:aVpIEQNT0ug
+
+:transition:
+  :title: take the back
+  :from: closed_guard:A
+  :to: back:A
+  :opportunity:
+    you're able to pull his arm across your body
+  :video: youtube:0Pc-gS9IA04
 
 :transition:
   :from: closed_guard_vs_standing:D
@@ -358,6 +448,42 @@ Guard
   * grab his arm on your right side, and armbar as usual
     lifting your hips.
 
+
+:transition:
+  :title: open guard pass
+  :from: open_guard:D
+  :to: mount:A
+  :video: youtube:24YQ-WIysAA
+  self-defense move...
+
+:transition:
+  :title: elevator sweep
+  :from: closed_guard:A
+  :to: mount:A
+  :opportunity:
+    opponent posts arm and you can trap it
+  :video: youtube:F0YyN152Kko
+  :video: youtube:dBlrF04Dx1Q
+  :video: youtube:mXBYTfiHrhg
+
+:transition:
+  :title: elevator sweep
+  :from: spider_guard:A
+  :to: mount:A
+  :opportunity:
+    you control his wrists and can get your hips under him
+  :video: youtube:ybyWLFlQEnA
+
+:transition:
+  :title: double ankle sweep
+  :from: closed_guard:A
+  :to: mount:A
+  :opportunity:
+    you can grab both opponents' ankles
+  :video: youtube:iAXXkJssu1I
+  :video: youtube:3MnlBrVSObk
+  :video: youtube:c8E22NsKhkY
+
 Side Control
 ------------
 
@@ -366,6 +492,7 @@ Side Control
   :to: closed_guard:A
   :opportunity:
     A is moving in for side-control but hasn't yet secured it.
+  :video: youtube:-JdtL-dBP7k
   * turn onto your side (say, your right side) facing him.
   * get your left hand on his near shoulder and your right
     hand cupping his hip / back on the same (near) side of his body.
@@ -396,6 +523,28 @@ Side Control
     shoulder on your left) to get enough space to pass your
     leg around his body, to closed-guard.
 
+:transition:
+  :title: shrimp escape
+  :from: side_control:D
+  :to: closed_guard:A
+  :video: youtube:KqoPXVA_5Hc
+
+:transition:
+  :title: shrimp escape using butterfly hook
+  :from: side_control:D
+  :to: closed_guard:A
+  :opportunity:
+    opponent is trying to pass around you e.g. to north-south
+  :video: youtube:8Jy--tWhnrg
+
+:transition:
+  :title: I'm number one escape
+  :from: side_control:D
+  :to: closed_guard:A
+  :opportunity:
+    opponent holding you in wrestler side control
+  :video: youtube:JrfaGLTyAoU
+
 
 :transition:
   :from: side_control:D
@@ -405,9 +554,14 @@ Side Control
     the trailing leg momentarily, so you can push it (his knee) over your
     leg to half guard.
 
+
 :transition:
   :from: side_control:A
   :to: mount:A
+  :opportunity:
+    you're able to pin his body and head with your shoulder, leaving
+    your arm free to push his leg out of the way.
+  :video: youtube:0GHlPvMAC8w
 
   bring knee across his belly while staying tight and heavy
   on him.  then simply turn your knee and lower leg to his
@@ -417,14 +571,18 @@ Side Control
 :transition:
   :from: side_control:A
   :to: knee_on_belly:A
+  :opportunity:
+    you're able to pin his collar and hip to burst up to knee on belly
   :video: youtube:q6S2Qd9PdNI
 
   * from standard side control, control his lapel with
     hand behind his neck, and his hips with hand on his
     far-side hip.
-  * bring your knee onto his belly by bringing your weight
+  * explode up to knee on belly by bringing your weight
     briefly onto your hands (pinning him down while you
     bring your knee up).
+  * apply even more pressure to his belly by lifting both
+    control points with your arms.
   * post your other leg wide for stability.
 
 :submission:
@@ -461,12 +619,22 @@ Side Control
   :opportunity:
     you can explosively step your leg over his head, then under.
 
+:submission:
+  :title: paper cutter choke
+  :type: choke
+  :from: side_control:A
+  :opportunity:
+    opponent's neck is undefended, e.g. he wrapped his arms around you
+  :video: youtube:yYN-VWN-w0c
+
 Mount
 -----
 
 :transition:
+  :title: elbow escape
   :from: mount:D
   :to: closed_guard:A
+  :video: youtube:JcsrIBqClaw
   :opportunity:
     If A doesn't have hooks in, you can hip escape to get
     a leg out, and knee up to block.
@@ -475,11 +643,13 @@ Mount
   * if you can / need to, form a frame with your arms
     to help keep his weight off you once you bridge.
   * lift hip using right leg, bridge on your left shoulder
+    (and left elbow wedged against his knee)
     to lift his weight up off you, take some of it up with your frame.
   * hip escape off your right foot, pass your flat (left) leg
     outside A's leg.  You can get half-guard here...
   * hip escape again (possibly pushing off A's hip with your
     left foot) to get your other leg out, to closed guard.
+
     
 :transition:
   :from: mount:D
@@ -503,7 +673,18 @@ Mount
     Move it outside theirs, touching and trapping it.
   * bridge on your left shoulder, turning your body towards
     your left and throwing them onto their back.
-  * roll with them to mount.
+  * if you can, roll with them to mount: don't get your left leg trapped in
+    half-guard.
+
+:transition:
+  :title: Take the Back
+  :from: mount:A
+  :to: back:A
+  :opportunity:
+    opponent tries to turn on to his side.
+  :video: youtube:nBOifxnzRiQ
+  :video: youtube:avlXrU9Pp1s
+
 
 :transition:
   :from: mount:D
@@ -522,19 +703,41 @@ Mount
   * keep control of his arm, go for a Kimura style submission
     or take his back.
 
+:transition:
+  :title: trap and roll
+  :type: roll
+  :from: mount:D
+  :to: closed_guard:D
+  :opportunity:
+    opponent grabs your throat or chest (preparing for big punches).
+  :video: youtube:Lb1vvMHZVeg
+  :video: youtube:TGd4a0LbtO0
+  :video: youtube:DzdArTQkwHs
+  :video: youtube:lknsnPkSWx4
+  :video: youtube:66siHUeqxA8
+  :video: youtube:bNKKVHgIu2I
+  :video: youtube:2sH7fF_Rcss
+  :video: youtube:NQfv2EteTzk
+
+
 :submission:
   :type: americana
   :from: mount:A
   :video: youtube:K6r8MkqeSMM
+  :video: youtube:ltklHi8c-Hs
+  :video: youtube:edkhKJ1aj6Q
+  :video: youtube:-XvQqvU5E8A
+  :video: youtube:xcRzZ8puuJ0
   :opportunity:
     opponent is flat on his back, not turned on his side.
 
 :submission:
   :type: armbar
   :from: mount:A
-
+  :video: youtube:8mtfImT5OXM
+  :video: youtube:uZmBliBIuMs
   :opportunity:
-    If D crosses his arms in front of his face
+    If D crosses his arms in front of his face or tries to push you away
 
   push his arm across his
   chest and pin his arm (from shoulder to elbow) with weight of your
@@ -553,18 +756,50 @@ Mount
     * Push off that elbow to get your body up, inside A's guard.
       Posture up.
   
+:submission:
+  :title: modified mount armbar
+  :type: armbar
+  :from: mount:A
+  :video: youtube:DvlZFV656R8
+  :opportunity:
+    opponent tries to turn onto his side
+
+:submission:
+  :title: cross choke
+  :type: choke
+  :from: mount:A
+  :video: youtube:vM6gbMSpcyw
+  :video: youtube:djNjVIhsyD0
+  :video: youtube:1h66Sa_-lQQ
+  :video: youtube:b_de3s9aHNw
+  :video: youtube:TcK8_CAWwLY
+  :video: youtube:abG92_UKJPk
+  :opportunity:
+    you can reach deep (preferably to the back of) his collar.
+
+:submission:
+  :title: baseball bat choke
+  :type: choke
+  :from: mount:A
+  :opportunity:
+    opponent blocked your cross choke
+  :video: youtube:tiX8iP1vAvo
+  
 
 Knee on belly
 -------------
 
 :submission:
+  :title: farside armbar
   :type: armbar
   :from: knee_on_belly:A
+  :opportunity:
+    opponent tries to push your knee off with his farside arm,
+    so you scoop and control it.
   :video: youtube:zmU6uHyKTuo
   :video: youtube:q6S2Qd9PdNI
-  :opportunity:
-    You control his near-side arm (say, on your right side)
-    with your left hand, secure it against your chest.
+  * control his far-side arm by scooping underhook and
+    secure it against your chest.
   * pull his head towards you with your right hand to make
     it easier to pass your foot over.
   * leaning your full weight on his belly, pass your right
@@ -642,6 +877,22 @@ Standing
 --------
 
 :transition:
+  :title: Leg Hook Takedown
+  :type: takedown
+  :from: clinch:A
+  :to: mount:A
+  :video: youtube:qnax8Sr-joM
+  :video: youtube:SnuTY7rVELY
+  :video: youtube:Yy31cPYqiBE
+
+:transition:
+  :title: clinch aggressive opponent
+  :from: standing_face_off:A
+  :to: clinch:A
+  :opponent: opponent steps forward to punch
+  :video: youtube:EfbV40bysEo
+
+:transition:
   :type: takedown
   :from: standing_face_off:A
   :to: side_control:A
@@ -655,6 +906,48 @@ Standing
     with your whole body.
   * as he falls backwards, twisting to your left,
     roll with him to side control or mount.
+
+:transition:
+  :title: kata guruma takedown
+  :type: takedown
+  :from: standing_face_off:A
+  :to: side_control:A
+  :opportunity:
+    You get inside grip on his collar.
+  :video: youtube:ZfpJsI6_kvQ
+
+:transition:
+  :title: haymaker defense
+  :from: standing_face_off:A
+  :to: back_clinch:A
+  :opportunity:
+    you can see punch coming
+  :video: youtube:jIh9C41e4Dw
+
+:transition:
+  :title: o soto gari takedown
+  :type: takedown
+  :from: standing_face_off:A
+  :to: side_control:A
+  :opportunity:
+    You have "steering-wheel control" over his body.
+  :video: youtube:UKJR9fdSN4g
+
+:transition:
+  :title: body fold takedown
+  :type: takedown
+  :from: standing_face_off:A
+  :to: mount:A
+  :video: youtube:4kfL4fCIPx8
+
+:transition:
+  :title: pull guard
+  :from: standing_face_off:A
+  :to: closed_guard:A
+  :opportunity:
+     you control opponent's body so you can pull him down into closed guard
+  :video: youtube:9WD4ryE1pSU
+  :video: youtube:SxYhwxqi-UM
 
 :transition:
   :title: One Leg Takedown
@@ -699,6 +992,8 @@ Standing
     lower back, and gripping him strongly with your
     knees push his lower body toward your feet.
     At the same time pull up on your guillotine for the choke.  
+  :video: youtube:e18OWk92fkI
+  :video: youtube:47-Rq1dJFP4
 
 Turtle
 ------
@@ -717,8 +1012,18 @@ Turtle
 Back
 ----
 
+:transition:
+  :title: Remount
+  :from: back:A
+  :to: mount:A
+  :opportunity: 
+    you lost your leg hooks, opponent may be trying to turn to face you.
+  :video: youtube:t9eA7iKREY4
+
+
+
 :submission:
-  :title: Mate Leon
+  :title: Mata Leao
   :from: back:A
 
   * If you already have seatbelt, choke with your arm that's over
@@ -730,3 +1035,8 @@ Back
     Push forward with your head as well in the same way to
     finish the choke.
   * you can also immobilize his body with body triangle.
+  :video: youtube:uyo8jR40MPE
+  :video: youtube:URWOJ1k5LcE
+  :video: youtube:B5qDtGaUXVI
+  :video: youtube:WifaGT0HSHk
+
