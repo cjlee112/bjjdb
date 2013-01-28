@@ -3,12 +3,6 @@
 {{ position.title }}: What Your Opponent Could Do
 </h1>
 
-{% for sub in position.opponent.submission %}
-<li><A HREF={{- make_url('submissionA', submission=sub.id) -}}>
-{{ sub.title }}
-</A></li>
-{% endfor %}
-
 {% for sub in getattr(position.opponent, 'submission', ()) %}
 <li><A HREF={{- make_url('submissionA', submission=sub.id) -}}>
 {{ sub.title }}
