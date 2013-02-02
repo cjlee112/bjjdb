@@ -1,10 +1,14 @@
-import cherrypy
+try:
+    import cherrypy
+except ImportError: # not needed unless we really want to run webserver
+    pass
 import thread
 from jinja2 import Environment, FileSystemLoader
 import os
 import glob
 import sys
 import random
+import schema
 
 def redirect(path='/', body=None, delay=0):
     'redirect browser, if desired after showing a message'
@@ -148,8 +152,7 @@ class Server(object):
         return self.view('position', position=pos)
     random.exposed = True
 
-def get_server(filename):
-    import schema
+def init_data(filename):
     from reusabletext import parse
     print 'loading templates...'
     templateDict, env = load_templates()
@@ -158,6 +161,10 @@ def get_server(filename):
     views = init_template_views(templateDict)
     rust = parse.parse_file(filename, blockTokens=schema.defaultBlocks)
     positions, moves = schema.init_graph(rust)
+    return positions, moves, views
+
+def get_server(filename):
+    positions, moves, views = init_data(filename)
     return Server(positions, moves, views), positions, moves
 
 if __name__ == '__main__':
