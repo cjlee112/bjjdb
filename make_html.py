@@ -2,7 +2,7 @@ import web
 import os.path
 
 def make_filename(view, objID):
-    return '%s_%s.html' % (view, str(objID))
+    return '%s_%s.html' % (view, str(objID).replace(':', '_'))
 
 def make_url(view, **kwargs):
     if view.startswith('http://'):
