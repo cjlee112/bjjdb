@@ -84,8 +84,18 @@ def fetch_data(d, positions, moves):
         d['transition'] = moves[int(trID)]
 
 def make_url(view, **kwargs):
-    opts = ['view=' + view] + ['%s=%s' % (k,str(v)) for k,v in kwargs.items()]
-    return '/view?' + '&'.join(opts)
+    'return URL format for this server'
+    if view.startswith('/') or view.startswith('http://'): # treat as root path
+        path = view
+        opts = []
+    else: # treat as standard view
+        path = '/view'
+        opts = ['view=' + view]
+    opts += ['%s=%s' % (k,str(v)) for k,v in kwargs.items()]
+    if opts:
+        return path + '?' + '&'.join(opts)
+    else:
+        return path
 
 class Server(object):
     def __init__(self, positions, moves, views):

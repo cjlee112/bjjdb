@@ -25,6 +25,6 @@ To {{ transition.toPos.id }}
 [
 <A HREF={{- make_url('position', position=transition.toPos.id) -}}>
 NEXT</A>
-| <A HREF="/random">RANDOM</A> 
-| <A HREF="/">HOME</A> 
+| <A HREF={{- make_url('/random') -}}>RANDOM</A> 
+| <A HREF={{- make_url('/') -}}>HOME</A> 
 ]

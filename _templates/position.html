@@ -4,7 +4,7 @@
 </h1>
 
 {% if hasattr(position, 'image') %}
-  <IMG SRC="{{- position.image[0].url -}}"><BR>
+  <IMG SRC="{{- make_url(position.image[0].url) -}}"><BR>
 {% endif %}
 
 What transitions and submissions can you try here?
@@ -15,6 +15,6 @@ What transitions and submissions can you try here?
 {% if hasattr(position, 'opponent') and (position.opponent.transition or position.opponent.submission) %}
 | <A HREF={{- make_url('opponentA', position=position.id) -}}>RISKS</A>
 {% endif %}
-| <A HREF="/random">RANDOM</A> 
-| <A HREF="/">HOME</A> 
+| <A HREF={{- make_url('/random') -}}>RANDOM</A> 
+| <A HREF={{- make_url('/') -}}>HOME</A> 
 ]
